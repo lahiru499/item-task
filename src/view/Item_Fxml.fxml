@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="809.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itemForm">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="119.0" layoutX="-1.0" layoutY="4.0" opacity="0.07" stroke="BLACK" strokeType="INSIDE" width="809.0" />
+      <Label layoutX="291.0" layoutY="14.0" prefHeight="74.0" prefWidth="243.0" text="Add Items" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold Italic" size="46.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_itemName" layoutX="14.0" layoutY="185.0" prefHeight="30.0" prefWidth="288.0" promptText="Item Name" />
+      <TextField fx:id="item_price" layoutX="471.0" layoutY="185.0" prefHeight="30.0" prefWidth="320.0" promptText="Item price" />
+      <TextField fx:id="item_qty" layoutX="14.0" layoutY="231.0" prefHeight="30.0" prefWidth="288.0" promptText="qty" />
+      <Button layoutX="529.0" layoutY="305.0" mnemonicParsing="false" onAction="#btn_iAddItem_Action" prefHeight="26.0" prefWidth="87.0" text="AddItem" />
+      <Button layoutX="369.0" layoutY="305.0" mnemonicParsing="false" onAction="#btn_Reloditem_Action" prefHeight="26.0" prefWidth="87.0" text="RelodItem" />
+      <TableView fx:id="tabale_veiw" layoutY="351.0" prefHeight="229.0" prefWidth="809.0">
+        <columns>
+          <TableColumn fx:id="colum_name" prefWidth="163.19995403289795" text="Name" />
+          <TableColumn fx:id="colum_itemPrice" prefWidth="130.40000915527344" text="ItemPrice" />
+            <TableColumn fx:id="colum_qty" prefWidth="149.60003662109375" text="qty" />
+            <TableColumn fx:id="colum_discription" prefWidth="135.19998168945312" text="Description" />
+            <TableColumn fx:id="cloum_id" prefWidth="191.99993896484375" text="ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="227.0" layoutY="305.0" mnemonicParsing="false" onAction="#btn_VeiwCustomerAction" prefHeight="26.0" prefWidth="96.0" text="Veiw Customer" />
+      <TextField fx:id="txt_description" layoutX="471.0" layoutY="230.0" prefHeight="30.0" prefWidth="320.0" promptText="description" />
+      <TextField fx:id="txt_id" layoutX="173.0" layoutY="130.0" prefHeight="26.0" prefWidth="397.0" promptText="Item id" />
+   </children>
+</AnchorPane>
